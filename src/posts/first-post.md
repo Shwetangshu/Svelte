@@ -10,10 +10,14 @@ published: true
 
 ## Markdown
 
-Hey friends! 👋
+Hi friends! 👋
+
+Code:
 
 ```ts
 function greet(name: string) {
 	console.log(`Hey ${name}! 👋`)
 }
 ```
+
+Hi for the best time of the year!

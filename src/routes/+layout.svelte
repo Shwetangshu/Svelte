@@ -5,8 +5,9 @@
 	import 'open-props/style'
 	import 'open-props/normalize'
 	import 'open-props/buttons'
-
+	import PageTransition from './transition.svelte'
 	import '../app.css'
+	export let data
 </script>
 
 <div class="layout">
@@ -15,7 +16,10 @@
 
 	<main>
 		<!-- Black hole for other content -->
-		<slot />
+		<PageTransition url={data.url}>
+			<slot />
+		</PageTransition>
+		
 	</main>
 
   <!-- Footer -->
